@@ -1,25 +1,249 @@
-<footer class="footer">
-  <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
+<footer class="v7-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="/" title="Homepage Volotea" class="v7-footer__logo">
+                                <svg>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://volotea.com/assets/img/sprite.svg#svg-logo-text"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        
 
-    <div class="footer-language-selector">
-      {{#if alternative_locales}}
-        <div class="dropdown language-selector">
-          <button class="dropdown-toggle" aria-haspopup="true">
-            {{current_locale.name}}
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
-            </svg>
-          </button>
-          <span class="dropdown-menu dropdown-menu-end" role="menu">
-            {{#each alternative_locales}}
-              <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-                {{name}}
-              </a>
-            {{/each}}
-          </span>
-        </div>
-      {{/if}}
+
+
+<div class="v7-footer-links || col-xs-12 | col-sm-6 col-sm-right | col-md-7 | col-lg-8 col-lg-offset-1">
+    <div class="row">
+                <nav class="col-xs-12 | col-md-3" itemscope="" itemtype="https://schema.org/Reservation">
+                    <ul class="v7-list-link">
+                        <li class="v7-list-link__title">
+                            <span itemprop="name mainEntityOfPage">FLIGHTS</span>
+                        </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/flight-offers/" rel="noopener noreferrer" title="Flight offers" target=""><span itemprop="name reservationFor">Flight offers</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/flight-status/" rel="noopener noreferrer" title="Flight status" target=""><span itemprop="name reservationFor">Flight status</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/direct-flights/" rel="noopener noreferrer" title="Direct Flights"><span itemprop="name reservationFor">Direct Flights</span></a>
+                                    </li>
+                                    <li class="v7-list-link__item v7-list-link__item--separator"></li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/agency-register/" rel="noopener noreferrer" title="Travel Agencies" target=""><span itemprop="name reservationFor">Travel Agencies</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="https://groups.volotea.com/index.php" rel="noopener noreferrer" title="Groups" target="_blank"><span itemprop="name reservationFor">Groups</span></a>
+                                    </li>
+                    </ul>
+                </nav>
+                <nav class="col-xs-12 | col-md-3" itemprop="offers" itemscope="" itemtype="https://schema.org/Offer">
+                    <ul class="v7-list-link">
+                        <li class="v7-list-link__title">
+                            <span itemprop="name subjectOf">YOUR BOOKING</span>
+                        </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/your-booking/check-in-online/" rel="noopener noreferrer" title="Online check-in" target=""><span itemprop="name itemOffered subjectOf">Online check-in</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/your-booking/" rel="noopener noreferrer" title="Manage your booking" target=""><span itemprop="name itemOffered subjectOf">Manage your booking</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/your-booking/resend-confirmation/" rel="noopener noreferrer" title="Re-send confirmation email" target=""><span itemprop="name itemOffered subjectOf">Re-send confirmation email</span></a>
+                                    </li>
+                                    <li class="v7-list-link__item v7-list-link__item--separator"></li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/your-booking/assign-seat/" rel="noopener noreferrer" title="Assign seats"><span itemprop="name itemOffered subjectOf">Assign seats</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/your-booking/add-luggage/" rel="noopener noreferrer" title="Add luggage" target=""><span itemprop="name itemOffered subjectOf">Add luggage</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/your-booking/priority-boarding/" rel="noopener noreferrer" title="Priority boarding" target=""><span itemprop="name itemOffered subjectOf">Priority boarding</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/your-booking/change-flights/" rel="noopener noreferrer" title="Make flight changes" target=""><span itemprop="name itemOffered subjectOf">Make flight changes</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/your-booking/flight-documentation/" rel="noopener noreferrer" title="Travel documents" target=""><span itemprop="name itemOffered subjectOf">Travel documents</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/your-booking/special-assistance/" rel="noopener noreferrer" title="Special assistance" target=""><span itemprop="name itemOffered subjectOf">Special assistance</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="/en/your-booking/manage-your-invoice/" rel="noopener noreferrer" title="Manage your invoice" target=""><span itemprop="name itemOffered subjectOf">Manage your invoice</span></a>
+                                    </li>
+                                    <li class="v7-list-link__item v7-list-link__item--separator"></li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="https://hotels.volotea.com/?label=pagefooter-link-942942-click" rel="noopener noreferrer" title="Hotels" target="_blank"><span itemprop="name itemOffered subjectOf">Hotels</span></a>
+                                    </li>
+                                  <li class="v7-list-link__item" itemprop="url">
+                                        <a itemprop="url" href="https://cars.volotea.com/?preflang=en" rel="noopener noreferrer" title="Car rental" target="_blank"><span itemprop="name itemOffered subjectOf">Car rental</span></a>
+                                    </li>
+                    </ul>
+                </nav>
+                <nav class="col-xs-12 | col-md-3">
+                    <ul class="v7-list-link">
+                        <li class="v7-list-link__title">
+                            DISCOVER
+                        </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/destinations/" rel="noopener" title="Where we fly?">Where we fly?</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/our-planes/" rel="noopener" title="Fly with Volotea">Fly with Volotea</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/megavolotea/" rel="noopener" title="Megavolotea">Megavolotea</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/flex/" rel="noopener" title="Flex">Flex</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/combo/" rel="noopener" title="Combo">Combo</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/onboard-entertainment/" rel="noopener" title="On-board entertainment" target="">On-board entertainment</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/menu-on-board/" rel="noopener" title="On-board menu" target="">On-board menu</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/best-price/" rel="noopener" title="Best price">Best price</a>
+                                    </li>
+                                    <li class="v7-list-link__item v7-list-link__item--separator"></li>
+                                  <li class="v7-list-link__item">
+                                        <a href="https://volare.volotea.com/en/" rel="noopener" title="Volare Magazine" target="_blank">Volare Magazine</a>
+                                    </li>
+                                    <li class="v7-list-link__item v7-list-link__item--separator"></li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/mobile/" rel="noopener" title="Mobile access" target="">Mobile access</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/sign-up/" rel="noopener" title="Newsletter" target="">Newsletter</a>
+                                    </li>
+                    </ul>
+                </nav>
+                <nav class="col-xs-12 | col-md-3">
+                    <ul class="v7-list-link">
+                        <li class="v7-list-link__title">
+                            VOLOTEA
+                        </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/about-volotea/" rel="noopener" title="About Volotea" target="">About Volotea</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/10th-anniversary/" rel="noopener" title="10 years flying together">10 years flying together</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/information/" rel="noopener" title="Latest travel information">Latest travel information</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/high-recommended/" rel="noopener" title="Your opinion matters" target="">Your opinion matters</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/families/" rel="noopener" title="Travel with Families">Travel with Families</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/contact/" rel="noopener" title="Help centre" target="">Help centre</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/press-room/" rel="noopener" title="Press Room" target="">Press Room</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/social-responsability/" rel="noopener" title="Corporate Social Responsibility">Corporate Social Responsibility</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/sustainability/" rel="noopener" title="Sustainability">Sustainability</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="https://jobs.volotea.com/" rel="noopener" title="Work with us" target="_blank">Work with us</a>
+                                    </li>
+                                    <li class="v7-list-link__item v7-list-link__item--separator"></li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/service-fees/" rel="noopener" title="Service fees table">Service fees table</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/legal-conditions/conditions-of-carriage/" rel="noopener" title="Conditions of carriage">Conditions of carriage</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/legal-conditions/terms-of-use/" rel="noopener" title="Terms of use">Terms of use</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/legal-conditions/privacy-policy/" rel="noopener" title="Privacy Policy">Privacy Policy</a>
+                                    </li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/legal-conditions/cookies-policy/" rel="noopener" title="Cookies Policy">Cookies Policy</a>
+                                    </li>
+                                    <li class="v7-list-link__item v7-list-link__item--separator"></li>
+                                  <li class="v7-list-link__item">
+                                        <a href="/en/sitemap/" rel="noopener" title="Site map">Site map</a>
+                                    </li>
+                    </ul>
+                </nav>
     </div>
-  </div>
-</footer>
+</div>
+<div class="col-xs-12 | col-sm-5 | col-md-4 | col-lg-3">
+    
+    <div class="v7-rows || v7-footer__social">
+        <div class="v7-cosl-xs-12">
+
+
+                <ul class="v7-footer__social-list">
+
+                        <li>
+                            <a href="https://www.facebook.com/Volotea" target="_blank" rel="noopener" title="" class="v7-btn-circle v7-btn-circle--md v7-btn-circle--brand || v7-i v7-i--facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/volotea" target="_blank" rel="noopener" title="" class="v7-btn-circle v7-btn-circle--md v7-btn-circle--brand || v7-i v7-i--twitter"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com/volotea" target="_blank" rel="noopener" title="" class="v7-btn-circle v7-btn-circle--md v7-btn-circle--brand || v7-i v7-i--instagram"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/volotea/" target="_blank" rel="noopener" title="" class="v7-btn-circle v7-btn-circle--md v7-btn-circle--brand || v7-i v7-i--linkedin"></a>
+                        </li>
+                </ul>
+                <a href="https://jobs.volotea.com/" rel="noopener" target="_blank" title="Work with Us" class="v7-btn v7-btn--border v7-btn--block v7-btn--sm">Work with Us</a>
+        </div>
+    </div>
+
+        <div class="v7-footer__app">
+            <p class="v7-body-content">Download Volotea App for iOS and Android</p>
+            <ul class="v7-flex || v7-u-mt-20">
+
+                        <li class="">
+                            <a href="https://itunes.apple.com/app/apple-store/id635331043?mt=8" target="_blank" rel="noopener">
+                                <img src="https://static.volotea.com/assets/img/app/appstorebadgeenwhite-2x.png  " alt="" title="">
+                            </a>
+                        </li>
+                        <li class="v7-flex__right">
+                            <a href="https://play.google.com/store/apps/details?id=com.volotea.droid&amp;utm_source=newsletter&amp;utm_campaign=V7Newsletters2019&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank" rel="noopener">
+                                <img src="https://static.volotea.com/assets/img/app/googleplaybadgeenwhite-2x.png" alt="" title="">
+                            </a>
+                        </li>
+                        <li class="v7-flex__right">
+                            <a href="https://appgallery.huawei.com/#/app/C102463901" target="_blank" rel="noopener">
+                                <img src="https://www.volotea.com/media/2410/app-huawei_white_en.png" alt="" title="">
+                            </a>
+                        </li>
+            </ul>
+        </div>
+        <div class="v7-footer__badge v7-footer__badge--voloterra" style="border-top: 1px solid #57393a;padding: 30px 0;">
+            <img src="/media/2743/wta_en_badge_22.png" alt="" style="width: 285px;">
+        </div>
+
+</div>
+
+
+
+
+
+                    </div>
+                </div>
+                <i class="v7-footer__vichy">
+                    <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://volotea.com/assets/img/sprite.svg#svg-vichy-corner"></use>
+                    </svg>
+                </i>
+            </footer>

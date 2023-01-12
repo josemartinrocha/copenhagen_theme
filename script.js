@@ -481,6 +481,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-elemento = document.getElementById('haha');
-elemento.value = 'HAHAHAHAHAHAHA';

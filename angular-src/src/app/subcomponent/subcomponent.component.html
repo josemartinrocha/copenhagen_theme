@@ -1,1 +1,5 @@
 <p style="margin-bottom: 60px;">Subcomponent in Angular works!</p>
+<p>Input a number:</p>
+<input type="text" name="num" [(ngModel)]="num">
+<button (click)="saveNumber()" type="submit">Save in service</button>
+<p *ngIf="getNum()">Selected num: {{getNum()}}</p>

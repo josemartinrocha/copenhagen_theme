@@ -1,3 +1,4 @@
+import { TestService } from './../testservice.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OthersubcomponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private testService: TestService) { }
 
   ngOnInit(): void {
   }
 
+  getNum() {
+    return this.testService.getNum();
+  }
 }
